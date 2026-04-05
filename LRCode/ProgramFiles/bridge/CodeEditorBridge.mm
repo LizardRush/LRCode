@@ -3,8 +3,12 @@
 
 @implementation CodeEdit
 
-+ (void)write:(int)path with:(int)data {
-    return;
++ (NSString *)write:(NSString *)path with:(NSString *)data {
+    std::string result = fs::write(
+        std::string([path UTF8String]),
+        std::string([data UTF8String])
+    );
+    return [NSString stringWithUTF8String:result.c_str()];
 }
 
 @end
