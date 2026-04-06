@@ -2,6 +2,6 @@
 
 @interface CodeEdit : NSObject
 
-+ (string)write:(string)path with:(string)data;
++ (NSString *)write:(NSString *)path with:(NSString *)data;
 
 @end

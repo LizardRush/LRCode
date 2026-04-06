@@ -1,2 +1,1 @@
-#import "bridge/CodeEditor
-Bridge.h"
+#import "bridge/CodeEditorBridge.h"
